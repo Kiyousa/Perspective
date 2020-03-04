@@ -26,8 +26,8 @@ C = sy.Matrix([[a, c/2, d/2],
 
 C = C.subs({a: 1, b: 1, c: 0, d: 0, e: -2, f: 0})
 
-# H.astype(int) 'Cuz I know all the elements in H must be integer, if not don't do this
-H = sy.Matrix(H.astype(int))
+
+H = sy.Matrix(H.astype(int))  # H.astype(int) 'Cuz I know all the elements in H must be integer, if not don't do this
 Cp = H.inverse_GE().T * C * H.inverse_GE()
 
 print(Cp)
