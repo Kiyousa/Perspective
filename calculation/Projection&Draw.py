@@ -55,5 +55,4 @@ plt.scatter(x1, y1, s=1, c='green', alpha=.5)
 plt.scatter(x2, y2, s=1, c='red', alpha=.5)
 plt.scatter(x3, y3, s=1, c='purple', alpha=.5)
 # plt.scatter(x4, y4, s=1, c='blue', alpha=.3)
-
-M_p * np.array([0, 5, -1, 1]).reshape(4, 1)
+plt.show()
